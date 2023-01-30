@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey: #707070;
+    --color-grey-2: #C2C2C2;
+    --color-black-2: #1F1F1F;
+    --color-green: #14FF00;
+    --color-red: #FF0000;
+}
+
+body{
+    background: linear-gradient(180deg, #3E3E3E 0%, #000000 100%);
+    color: var(--color-white);
+    min-height: 100vh;
+    width: auto;
+}

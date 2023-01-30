@@ -1,0 +1,109 @@
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    .card {
+        position: relative;
+        margin: 0 30px 30px 30px;
+        background-color: var(--color-grey);
+        filter: drop-shadow(5px 5px 10px #000000);
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        user-select: none;
+        transition: all .2s ease-in-out;
+        figure {
+            display: flex;
+            flex-direction: column;
+            img{
+                pointer-events: none;
+                margin: 30px;
+            }
+
+            figcaption {
+                margin: 0 30px;
+
+                a{
+                    text-decoration: none;
+                    color: var(--color-white);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    strong {
+                        font-size: 1rem;
+                    }
+                }
+
+                p {
+                    color: var(--color-grey-2);
+                    margin-top: 5px;
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .like-product {
+            i {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                transition: all .2s ease-in-out;
+                color: var(--color-black);
+
+                &:hover {
+                    transition: all .2s ease-in-out;
+                    color: var(--color-white);
+                }
+            }
+        }
+
+        .inline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+
+            .price {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .statu-stock {
+                margin-left: 15px;
+            }
+
+            .in-stock{
+                color: var(--color-green);
+            }
+
+            .not-available{
+                color: var(--color-red);
+            }
+        }
+
+        .btn {
+            text-align: center;
+            .btn-add {
+                cursor: pointer;
+                margin: 20px 0 10px 0;
+                width: 200px;
+                height: 40px;
+                background-color: var(--color-black);
+                color: var(--color-white);
+                border-radius: 5px;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transition: all .2s ease-in-out;
+                    border: 1px solid var(--color-white);
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all .2s ease-in-out;
+        }
+    }
+}

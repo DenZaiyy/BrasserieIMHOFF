@@ -1,0 +1,96 @@
+.cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cards .card {
+  position: relative;
+  margin: 0 30px 30px 30px;
+  background-color: var(--color-grey);
+  filter: drop-shadow(5px 5px 10px #000000);
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+.cards .card figure {
+  display: flex;
+  flex-direction: column;
+}
+.cards .card figure img {
+  pointer-events: none;
+  margin: 30px;
+}
+.cards .card figure figcaption {
+  margin: 0 30px;
+}
+.cards .card figure figcaption a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+.cards .card figure figcaption a:hover {
+  text-decoration: underline;
+}
+.cards .card figure figcaption a strong {
+  font-size: 1rem;
+}
+.cards .card figure figcaption p {
+  color: var(--color-grey-2);
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+.cards .card .like-product i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.2s ease-in-out;
+  color: var(--color-black);
+}
+.cards .card .like-product i:hover {
+  transition: all 0.2s ease-in-out;
+  color: var(--color-white);
+}
+.cards .card .inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.cards .card .inline .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cards .card .inline .statu-stock {
+  margin-left: 15px;
+}
+.cards .card .inline .in-stock {
+  color: var(--color-green);
+}
+.cards .card .inline .not-available {
+  color: var(--color-red);
+}
+.cards .card .btn {
+  text-align: center;
+}
+.cards .card .btn .btn-add {
+  cursor: pointer;
+  margin: 20px 0 10px 0;
+  width: 200px;
+  height: 40px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.cards .card .btn .btn-add:hover {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--color-white);
+}
+.cards .card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}/*# sourceMappingURL=cards.css.map */
