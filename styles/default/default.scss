@@ -13,11 +13,14 @@
     --color-black-2: #1F1F1F;
     --color-green: #14FF00;
     --color-red: #FF0000;
+    --color-cyan: rgb(45, 173, 182);
+    --color-blue: rgb(41, 54, 85);
+    --color-greyblue: rgb(180, 223, 241);
 }
 
 body{
-    background: linear-gradient(180deg, #3E3E3E 0%, #000000 100%);
-    color: var(--color-white);
+    background: var(--color-greyblue);
+    color: var(--color-blue);
     min-height: 100vh;
     width: auto;
 }

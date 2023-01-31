@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/default/default.css" />
     <link rel="stylesheet" href="/styles/navbar/navbar.css" />
     <link rel="stylesheet" href="/styles/cards/cards.css" />
+    <link rel="stylesheet" href="/styles/footer/footer.css">
     <link rel="stylesheet" href="/styles/index/style.css" />
     <link
       rel="stylesheet"
@@ -15,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Home - Beer website</title>
+    <title>Home - BRASSERIE IMHOFF</title>
   </head>
   <body>
     <header>
@@ -46,10 +47,7 @@
         </ul>
       </nav>
       <figure class="header-img">
-        <img src="/assets/img/header.jpeg" alt="Some beer in this image" />
-        <figcaption>
-          <h1>Beer website</h1>
-        </figcaption>
+        <img src="/assets/img/header-test.png" alt="Some beer in this image" />
       </figure>
     </header>
     <main>
@@ -58,52 +56,56 @@
           <img src="assets/img/logo.png" alt="website logo" />
         </figure>
         <div class="desc">
-          <h2>Beer Website</h2>
+          <h2>Brasserie IMHOFF</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The brewery IMHOFF-LA POISSE was created in July 2019 at Sarralbe by Lionel and Rose IMHOFF. A clumsy young couple, breaking everything in sight, a glass.... Oops break
+            A beer.... Oops empty. But how to fix it? By brewing their own beer, after loss and refreshment, After many, many a break,
+            They put the curse to rest by chaining the bad luck,
+            In a reflection over their cup
+            They decided to create LA POISSE
+            To ward off the curse and seeing their friends outside
+            They invented a beer identical to those of their peers.
+            Strong of hops and malt
+            Our two companions decided
+            To found the order of malt
           </p>
         </div>
       </section>
       <section class="best-seller">
         <div class="desc">
-          <h2>Best seller of products</h2>
+          <h2>Today</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Craft brewery created in 2019 by Rose and Lionel IMHOFF, with a strong desire to discover the world of beer, our young couple fell into the barrel instead, with a tumultuous beginning in their kitchen the first brews were drunk before being bottled. It was later that our young friends took advantage of the confinement to test new flavours....
+            Craft brewery created in 2019 by Rose and Lionel IMHOFF, with a strong desire to discover the world of beer, our young couple fell into the barrel instead, with a tumultuous beginning in their kitchen the first brews were drunk before even being bottled. It was later that our young friends took advantage of the confinement to test new flavours....
+            Today, in 2023, our two young friends produce more than 500 litres per month of beer, of which 200 litres more end up being drunk before being sold.
           </p>
         </div>
         <figure>
           <img
-            src="assets/img/coffret-la-08-3x33cl-1-verre-1-.jpg"
-            alt="website logo"
+            src="assets/img/brasserie.png"
+            alt="beer brasserie"
           />
         </figure>
       </section>
       <section class="month-products">
-        <h2>The best products of the month</h2>
+        <h2>The best sales</h2>
         <div class="cards">
           <div class="card">
             <div>
               <figure>
-                <img src="assets/img/example-card.png" alt="Image de produit" />
+                <div class="desc-content">
+                  <img src="assets/img/biere-blanche.png" alt="image of product" />
+                  <div class="middle">
+                    <p></p>
+                  </div>
+                </div>
                 <figcaption>
                   <a href="" target="_blank">
                     <strong>
-                      Pack tireuse PerfectDraft Pro - Leffe Blonde
+                      La Poisse - White beer
                     </strong>
                   </a>
-                  <p>Abbaye de Leffe</p>
+                  <p><button onclick="getMinPrice1()" class="item-select" id="beer-min-1">33cl</button> - <button onclick="getMaxPrice1()" id="beer-max-1">75cl</button></p>
                 </figcaption>
               </figure>
             </div>
@@ -111,7 +113,7 @@
               <i class="fa-regular fa-heart fa-xl"></i>
             </div>
             <div class="inline">
-              <div class="price">399,99 €</div>
+              <div class="price" id="price-1">2,50 €</div>
               <div class="statu-stock in-stock">In stock</div>
             </div>
             <div class="btn">
@@ -121,14 +123,16 @@
           <div class="card">
             <div>
               <figure>
-                <img src="assets/img/example-card.png" alt="Image de produit" />
+                <div class="desc-content">
+                  <img src="assets/img/biere-blonde.png" alt="image of product" />
+                </div>
                 <figcaption>
                   <a href="" target="_blank">
                     <strong>
-                      Pack tireuse PerfectDraft Pro - Leffe Blonde
+                      La Poisse - Blonde beer
                     </strong>
                   </a>
-                  <p>Abbaye de Leffe</p>
+                  <p><button onclick="getMinPrice2()" class="item-select" id="beer-min-2">33cl</button> - <button onclick="getMaxPrice2()" id="beer-max-2">75cl</button></p>
                 </figcaption>
               </figure>
             </div>
@@ -136,8 +140,8 @@
               <i class="fa-regular fa-heart fa-xl"></i>
             </div>
             <div class="inline">
-              <div class="price">399,99 €</div>
-              <div class="statu-stock not-available">Not available</div>
+              <div class="price" id="price-2">2,50 €</div>
+              <div class="statu-stock in-stock">In stock</div>
             </div>
             <div class="btn">
               <button class="btn-add" type="button">Add product</button>
@@ -146,14 +150,16 @@
           <div class="card">
             <div>
               <figure>
-                <img src="assets/img/example-card.png" alt="Image de produit" />
+                <div class="desc-content">
+                  <img src="assets/img/biere-ipa.png" alt="image of product" />
+                </div>
                 <figcaption>
                   <a href="" target="_blank">
                     <strong>
-                      Pack tireuse PerfectDraft Pro - Leffe Blonde
+                      La Poisse - I.P.A beer
                     </strong>
                   </a>
-                  <p>Abbaye de Leffe</p>
+                  <p><button onclick="getMinPrice3()" class="item-select" id="beer-min-3">33cl</button> - <button onclick="getMaxPrice3()" id="beer-max-3">75cl</button></p>
                 </figcaption>
               </figure>
             </div>
@@ -161,7 +167,7 @@
               <i class="fa-regular fa-heart fa-xl"></i>
             </div>
             <div class="inline">
-              <div class="price">399,99 €</div>
+              <div class="price" id="price-3">2,50 €</div>
               <div class="statu-stock in-stock">In stock</div>
             </div>
             <div class="btn">
@@ -172,7 +178,43 @@
       </section>
     </main>
     <footer>
-      <div class="prevent-msg"></div>
+      <div class="prevent-msg">
+        <p>Alcohol abuse is dangerous for your health, consume in moderation.</p>
+        <p>The sale of alcohol to minors (under 18) and pregnant women is prohibited</p>
+      </div>
+      <div class="footer-element">
+        <div class="informations">
+          <h2>Informations</h2>
+          <div class="links-infos">
+            <a href="">Legal notice</a>
+            <a href="">Terms of sales</a>
+            <a href="">Terms of service</a>
+          </div>
+        </div>
+        <div class="about-us">
+          <h2>About us</h2>
+          <p><a href="tel:33671973917">06.71.97.39.17</a></p>
+          <p>10 rue principale</p>
+          <p>57430 EICH (SARRALBE)</p>
+          <p><a href="mailto:brasserie.imhoff@gmail.com">brasserie.imhoff@gmail.com</a></p>
+        </div>
+        <div class="newsletter">
+          <h2>Newsletter</h2>
+          <div class="newsletter-input">
+            <input type="text" name="newsletter" id="newsletter" placeholder="Your email adress">
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+        <div class="social-link">
+          <h2>Socials</h2>
+          <a href="https://facebook.com/BrasserieImhoff/" target="_blank"><img src="assets/img/logo/facebook.png" alt="Logo facebook"></a>
+          <a href="https://www.instagram.com/brasserie.imhoff_la.poisse/" target="_blank"><img src="assets/img/logo/instagram.png" alt="Logo instagram"></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>BRASSERIE IMHOFF © 2023 - Created by <strong>Elan Formation</strong></p>
+      </div>
     </footer>
+    <script src="script/index.js"></script>
   </body>
 </html>
