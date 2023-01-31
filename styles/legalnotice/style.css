@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contain_notice{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 660px;
+}
+
+.top_title{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align-last: left;
+    text-decoration: underline;
+    margin-top: 30px;
+    
+}
+
+.title2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align-last: left;
+    text-decoration: underline;
+}
+
+.p1{
+    text-align-last: left;
+    text-align: justify;
+}
+
+.p{
+    text-align-last: left;
+    text-align: justify;
+    margin-top: 10px;
+}
