@@ -19,6 +19,25 @@ header {
     nav{
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 768px){
+            text-align: center;
+            display: block;
+
+            a {
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: center;
+            }
+            li {
+                margin-bottom: 20px;
+                margin-right: 0 !important;
+            }
+        }
+
         ul {
             display: flex;
             align-items: center;

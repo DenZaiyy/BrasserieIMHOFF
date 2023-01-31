@@ -1,17 +1,44 @@
+@media screen and (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    margin-top: 40px !important;
+    margin-left: 0 !important;
+  }
+  .about-us .desc {
+    width: auto !important;
+    margin: 20px;
+  }
+  .about-us .desc h2 {
+    text-align: center;
+  }
+  .best-seller {
+    flex-direction: column-reverse;
+    margin-top: 40px !important;
+    margin-right: 0 !important;
+  }
+  .best-seller figure img {
+    margin: 0 !important;
+  }
+  .best-seller .desc {
+    width: auto !important;
+    margin: 20px;
+  }
+  .best-seller .desc h2 {
+    text-align: center;
+  }
+}
+main h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+  text-align: center;
+}
 main .about-us {
   margin-top: 50px;
   margin-left: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 main .about-us figure img {
   pointer-events: none;
   -webkit-user-select: none;
@@ -22,36 +49,25 @@ main .about-us figure img {
   width: 200px;
   border-radius: 50%;
 }
-
 main .about-us .desc {
   width: 500px;
 }
-
 main .about-us .desc h2 {
   font-size: 2rem;
 }
-
 main .about-us .desc p {
   margin-top: 20px;
   font-size: 1rem;
   line-height: 19px;
   text-align: justify;
 }
-
 main .best-seller {
   margin-top: 40px;
   margin-right: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
-
 main .best-seller figure img {
   pointer-events: none;
   -webkit-user-select: none;
@@ -61,29 +77,23 @@ main .best-seller figure img {
   margin-left: 80px;
   height: 325px;
 }
-
 main .best-seller .desc {
   width: 500px;
 }
-
 main .best-seller .desc h2 {
   font-size: 2rem;
 }
-
 main .best-seller .desc p {
   margin-top: 20px;
   font-size: 1rem;
   line-height: 19px;
   text-align: justify;
 }
-
 main .month-products {
   margin-top: 40px;
 }
-
 main .month-products h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

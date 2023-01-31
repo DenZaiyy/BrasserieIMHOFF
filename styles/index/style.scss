@@ -1,4 +1,49 @@
+@media screen and (max-width: 768px){
+    .about-us {
+        flex-direction: column;
+        margin-top: 40px !important;
+        margin-left: 0 !important;
+
+        .desc {
+            width: auto !important;
+            margin: 20px;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    .best-seller{
+        flex-direction: column-reverse;
+        margin-top: 40px !important;
+        margin-right: 0 !important;
+
+        figure {
+            img{
+                margin: 0 !important;
+            }
+        }
+
+        .desc {
+            width: auto !important;
+            margin: 20px;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    
+}
+
 main {
+    h1 {
+        margin-top: 10px;
+        font-size: 3rem;
+        text-align: center;
+    }
     .about-us{
         margin-top: 50px;
         margin-left: 100px;

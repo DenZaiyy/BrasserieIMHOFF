@@ -1,104 +1,96 @@
+@media screen and (max-width: 768px) {
+  footer .prevent-msg {
+    height: auto !important;
+    padding: 10px;
+    text-align: center;
+  }
+  footer .footer-element {
+    display: block !important;
+    height: auto !important;
+  }
+  footer .footer-element .informations {
+    margin: 0 !important;
+  }
+  footer .footer-element .about-us {
+    margin: 0 !important;
+  }
+  footer .footer-element .newsletter {
+    margin: 0 !important;
+  }
+  footer .footer-element .newsletter .newsletter-input {
+    width: auto !important;
+  }
+  footer .footer-element .social-link {
+    text-align: center;
+    transform: none !important;
+    padding-bottom: 20px !important;
+  }
+  footer .copyright {
+    text-align: center;
+    padding: 10px !important;
+    height: auto !important;
+  }
+}
 footer .prevent-msg {
   height: 40px;
   background-color: var(--color-cyan);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--color-greyblue);
 }
-
 footer .footer-element {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 170px;
   background-color: var(--color-blue);
 }
-
 footer .footer-element div {
   margin-left: 15px;
   margin-right: 15px;
 }
-
 footer .footer-element div h2 {
   margin-bottom: 10px;
   color: var(--color-greyblue);
 }
-
 footer .footer-element div a {
   text-decoration: none;
   color: var(--color-greyblue);
 }
-
 footer .footer-element div p {
   margin-top: 5px;
   color: var(--color-greyblue);
 }
-
 footer .footer-element .informations {
   padding: 20px;
 }
-
 footer .footer-element .informations .links-infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0;
 }
-
 footer .footer-element .informations a {
   margin-top: 5px;
 }
-
 footer .footer-element .informations a:hover {
   text-decoration: underline;
 }
-
 footer .footer-element .about-us {
   padding: 20px;
 }
-
 footer .footer-element .newsletter {
   padding: 20px;
 }
-
 footer .footer-element .newsletter .newsletter-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   margin: 0;
 }
-
-footer .footer-element .newsletter .newsletter-input input[type="text"] {
+footer .footer-element .newsletter .newsletter-input input[type=text] {
   background-color: var(--color-cyan);
   color: var(--color-greyblue);
   padding: 5px;
@@ -106,71 +98,45 @@ footer .footer-element .newsletter .newsletter-input input[type="text"] {
   border-radius: 5px;
   border: 1px solid var(--color-greyblue);
 }
-
-footer .footer-element .newsletter .newsletter-input input[type="text"]::-webkit-input-placeholder {
+footer .footer-element .newsletter .newsletter-input input[type=text]::-moz-placeholder {
   color: var(--color-greyblue);
-  opacity: .8;
+  opacity: 0.8;
 }
-
-footer .footer-element .newsletter .newsletter-input input[type="text"]:-ms-input-placeholder {
+footer .footer-element .newsletter .newsletter-input input[type=text]:-ms-input-placeholder {
   color: var(--color-greyblue);
-  opacity: .8;
+  opacity: 0.8;
 }
-
-footer .footer-element .newsletter .newsletter-input input[type="text"]::-ms-input-placeholder {
+footer .footer-element .newsletter .newsletter-input input[type=text]::placeholder {
   color: var(--color-greyblue);
-  opacity: .8;
+  opacity: 0.8;
 }
-
-footer .footer-element .newsletter .newsletter-input input[type="text"]::placeholder {
-  color: var(--color-greyblue);
-  opacity: .8;
-}
-
-footer .footer-element .newsletter .newsletter-input input[type="submit"] {
+footer .footer-element .newsletter .newsletter-input input[type=submit] {
   padding: 5px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-radius: 5px;
   background-color: var(--color-cyan);
   border: 1px solid var(--color-greyblue);
   color: var(--color-greyblue);
 }
-
-footer .footer-element .newsletter .newsletter-input input[type="submit"]:hover {
+footer .footer-element .newsletter .newsletter-input input[type=submit]:hover {
   cursor: pointer;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: var(--color-blue);
   color: var(--color-greyblue);
 }
-
 footer .footer-element .social-link {
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  transform: translateY(-20%);
 }
-
 footer .footer-element .social-link a img {
   width: 30px;
   margin-right: 10px;
 }
-
 footer .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   background-color: var(--color-cyan);
   color: var(--color-greyblue);
-}
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

@@ -1,4 +1,44 @@
 footer {
+    @media screen and (max-width: 768px) {
+        .prevent-msg {
+            height: auto !important;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-element {
+            display: block !important;
+            height: auto !important;
+
+            .informations {
+                margin: 0 !important;
+            }
+
+            .about-us {
+                margin: 0 !important;
+            }
+
+            .newsletter {
+                margin: 0 !important;
+
+                .newsletter-input {
+                    width: auto !important;
+                }
+            }
+
+            .social-link {
+                text-align: center;
+                transform: none !important;
+                padding-bottom: 20px !important;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 10px !important;
+            height: auto !important;
+        }
+    }
     .prevent-msg {
         height: 40px;
         background-color: var(--color-cyan);

@@ -1,21 +1,14 @@
 .cards {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .cards .card {
   position: relative;
   margin: 0 30px 30px 30px;
   background-color: var(--color-blue);
-  -webkit-filter: drop-shadow(5px 5px 10px #000000);
-          filter: drop-shadow(5px 5px 10px #000000);
+  filter: drop-shadow(5px 5px 10px #000000);
   width: 300px;
   height: auto;
   border-radius: 10px;
@@ -23,167 +16,120 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: 1px solid var(--color-cyan);
 }
-
 .cards .card figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .cards .card figure .item-select {
   text-decoration: underline;
 }
-
 .cards .card figure .desc-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: auto;
 }
-
 .cards .card figure .desc-content img {
   display: block;
   opacity: 1;
   pointer-events: none;
   padding: 30px;
   border-radius: 50px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
 }
-
 .cards .card figure .desc-content .middle {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 80%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: var(--color-greyblue);
 }
-
 .cards .card figure .desc-content .middle .text {
   width: 100%;
   padding: 5px;
 }
-
 .cards .card figure .desc-content .middle h2 {
   width: 100%;
   font-size: 1rem;
 }
-
 .cards .card figure .desc-content:hover img {
-  opacity: .2;
+  opacity: 0.2;
 }
-
 .cards .card figure .desc-content:hover .middle {
   opacity: 1;
 }
-
 .cards .card figure figcaption {
   margin: 0 30px;
 }
-
 .cards .card figure figcaption a {
   text-decoration: none;
   color: var(--color-cyan);
 }
-
 .cards .card figure figcaption a:hover {
   text-decoration: underline;
 }
-
 .cards .card figure figcaption a strong {
   font-size: 1rem;
 }
-
 .cards .card figure figcaption p {
   color: var(--color-cyan);
   margin-top: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-
 .cards .card figure figcaption p button {
   background: none;
   border: none;
   color: var(--color-greyblue);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-
 .cards .card figure figcaption p button:hover {
   text-decoration: underline;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
 .cards .card .like-product i {
   position: absolute;
   top: 20px;
   right: 10px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   color: var(--color-greyblue);
 }
-
 .cards .card .like-product i:hover {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   color: var(--color-cyan);
 }
-
 .cards .card .inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 15px;
 }
-
 .cards .card .inline .price {
   color: var(--color-cyan);
   font-size: 2rem;
   font-weight: bold;
 }
-
 .cards .card .inline .statu-stock {
   margin-left: 15px;
 }
-
 .cards .card .inline .in-stock {
   color: var(--color-green);
 }
-
 .cards .card .inline .not-available {
   color: var(--color-red);
 }
-
 .cards .card .glass-product {
   margin-top: 19% !important;
 }
-
 .cards .card .btn {
   text-align: center;
 }
-
 .cards .card .btn .btn-add {
   cursor: pointer;
   border: none;
@@ -193,19 +139,12 @@
   background-color: var(--color-greyblue);
   color: var(--color-blue);
   border-radius: 5px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
 .cards .card .btn .btn-add:hover {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.02);
 }
-
 .cards .card:hover {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-/*# sourceMappingURL=cards.css.map */
+  transition: all 0.2s ease-in-out;
+}/*# sourceMappingURL=cards.css.map */

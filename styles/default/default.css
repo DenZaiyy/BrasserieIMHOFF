@@ -1,17 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
 }
 
 :root {
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-grey: #707070;
-  --color-grey-2: #C2C2C2;
-  --color-black-2: #1F1F1F;
   --color-green: #14FF00;
   --color-red: #FF0000;
   --color-cyan: rgb(45, 173, 182);
@@ -24,5 +18,4 @@ body {
   color: var(--color-blue);
   min-height: 100vh;
   width: auto;
-}
-/*# sourceMappingURL=default.css.map */
+}/*# sourceMappingURL=default.css.map */
