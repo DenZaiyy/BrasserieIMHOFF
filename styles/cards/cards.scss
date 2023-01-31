@@ -32,13 +32,9 @@
                     opacity: 1;
                     pointer-events: none;
                     padding: 30px;
-                    border-radius: 50%;
+                    border-radius: 50px;
                     transition: all .2s ease-in-out;
                     width: 100%;
-
-                    &:hover {
-                        opacity: .3;
-                    }
                 }
 
                 .middle{
@@ -47,9 +43,27 @@
                     position: absolute;
                     top: 50%;
                     left: 50%;
+                    width: 80%;
                     transform: translate(-50%, -50%);
+                    color: var(--color-greyblue);
 
-                    &:hover{
+                    .text {
+                        width: 100%;
+                        padding: 5px;
+                    }
+
+                    h2 {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                }
+
+                &:hover {
+                    img {
+                        opacity: .2;
+                    }
+
+                    .middle {
                         opacity: 1;
                     }
                 }
@@ -107,6 +121,8 @@
             }
         }
 
+        
+
         .inline {
             display: flex;
             justify-content: center;
@@ -130,6 +146,10 @@
             .not-available{
                 color: var(--color-red);
             }
+        }
+
+        .glass-product {
+            margin-top: 19% !important;
         }
 
         .btn {

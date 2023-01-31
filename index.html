@@ -41,14 +41,12 @@
           <li>
             <a href="#">
               <i class="fa-solid fa-basket-shopping fa-xl"></i>
-              Shopping cart
+              Shopping cart 
             </a>
+            <p class="cart"></p>
           </li>
         </ul>
       </nav>
-      <figure class="header-img">
-        <img src="/assets/img/header-test.png" alt="Some beer in this image" />
-      </figure>
     </header>
     <main>
       <section class="about-us">
@@ -91,12 +89,12 @@
         <h2>The best sales</h2>
         <div class="cards">
           <div class="card">
-            <div>
               <figure>
                 <div class="desc-content">
                   <img src="assets/img/biere-blanche.png" alt="image of product" />
                   <div class="middle">
-                    <p></p>
+                    <h2>Summer White Beer:</h2>
+                    <p class="text">Greedy by a caramelised malt and refreshing by the acidity of the red fruit notes. Don’t wait the good days for drink a good refresh white beer, let’s try our White POISSE A tasty caramelised but refreshing beer due to the acidity of the red fruit notes. Don’t wait until the sunny days are here to drink a good refreshing white beer. Let’s try now our White POISSE</p>
                   </div>
                 </div>
                 <figcaption>
@@ -108,7 +106,6 @@
                   <p><button onclick="getMinPrice1()" class="item-select" id="beer-min-1">33cl</button> - <button onclick="getMaxPrice1()" id="beer-max-1">75cl</button></p>
                 </figcaption>
               </figure>
-            </div>
             <div class="like-product">
               <i class="fa-regular fa-heart fa-xl"></i>
             </div>
@@ -117,7 +114,7 @@
               <div class="statu-stock in-stock">In stock</div>
             </div>
             <div class="btn">
-              <button class="btn-add" type="button">Add product</button>
+              <button class="btn-add" type="button" onclick="addToCart()">Add product</button>
             </div>
           </div>
           <div class="card">
@@ -125,6 +122,10 @@
               <figure>
                 <div class="desc-content">
                   <img src="assets/img/biere-blonde.png" alt="image of product" />
+                  <div class="middle">
+                    <h2>Lager Beer :</h2>
+                    <p class="text">With citrus notes that tickle your noses, bitterness will surprise your taste buds and while some light bubbles will be caressing your palate. Our Blonde POISSE would be refresh for your best gustatory will refresh you and offer gustatory pleasure.</p>
+                  </div>
                 </div>
                 <figcaption>
                   <a href="" target="_blank">
@@ -144,7 +145,7 @@
               <div class="statu-stock in-stock">In stock</div>
             </div>
             <div class="btn">
-              <button class="btn-add" type="button">Add product</button>
+              <button class="btn-add" type="button" onclick="addToCart()">Add product</button>
             </div>
           </div>
           <div class="card">
@@ -152,6 +153,10 @@
               <figure>
                 <div class="desc-content">
                   <img src="assets/img/biere-ipa.png" alt="image of product" />
+                  <div class="middle">
+                    <h2>IPA BEER (indian pale ale)</h2>
+                    <p class="text">Strongest beer by HOP, brewed with specific citrus hop, A beautiful bitterness in start of tasting followed by a delicious floral taste. And a bumpy happy ending.</p>
+                  </div>
                 </div>
                 <figcaption>
                   <a href="" target="_blank">
@@ -171,7 +176,7 @@
               <div class="statu-stock in-stock">In stock</div>
             </div>
             <div class="btn">
-              <button class="btn-add" type="button">Add product</button>
+              <button class="btn-add" type="button" onclick="addToCart()">Add product</button>
             </div>
           </div>
         </div>
@@ -216,5 +221,6 @@
       </div>
     </footer>
     <script src="script/index.js"></script>
+    <script src="script/products.js"></script>
   </body>
 </html>

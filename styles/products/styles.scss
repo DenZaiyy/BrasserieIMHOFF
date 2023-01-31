@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .products-beer {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .accessorie-products {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

@@ -7,6 +7,7 @@ header {
             width: 80px;
             margin: 15px;
             transition: all .2s ease-in-out;
+            border-radius: 50%;
 
             &:hover {
                 transition: all .2s ease-in-out;
@@ -46,6 +47,10 @@ header {
                     &:hover{
                         text-decoration: underline;
                     }
+                }
+
+                p {
+                    color: var(--color-cyan);
                 }
             }
         }

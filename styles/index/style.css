@@ -20,6 +20,7 @@ main .about-us figure img {
           user-select: none;
   margin-right: 30px;
   width: 200px;
+  border-radius: 50%;
 }
 
 main .about-us .desc {
