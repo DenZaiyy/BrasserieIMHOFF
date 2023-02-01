@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+    .content{
+        width: 90% !important;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 5%;
+
+    .content {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--color-blue);
+        color: var(--color-greyblue);
+        width: 30%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+            }
+
+            label {
+                margin-top: 10px;
+            }
+
+            input, a {
+                margin-top: 5px;
+                background-color: var(--color-greyblue);
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .remember-pwd {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .button {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                
+                input, a{
+
+                    margin: 0 5px;
+                    width: 50%;
+                    border: 1px solid var(--color-cyan);
+                    background-color: var(--color-cyan);
+                    color: var(--color-blue);
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;
+                    text-decoration: none;
+                    text-align: center;
+
+                    &:hover {
+                        transition: all .2s ease-in-out;
+                        background-color: var(--color-blue);
+                        color: var(--color-cyan);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -13,9 +13,19 @@
   --color-greyblue: rgb(180, 223, 241);
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   background: var(--color-greyblue);
   color: var(--color-blue);
-  min-height: 100vh;
+  min-height: 100%;
   width: auto;
+}
+
+main {
+  flex: 1;
 }/*# sourceMappingURL=default.css.map */
