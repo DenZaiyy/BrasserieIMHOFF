@@ -1,9 +1,27 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main .container {
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+  main .container input[type=text], main .container input[type=email], main .container input[type=tel] {
+    font-size: 1rem !important;
+  }
+  main .container .maps {
+    margin: 0 !important;
+    margin-top: 40px !important;
+    width: 100%;
+    text-align: center;
+  }
+  main .container label {
+    font-size: 1rem !important;
+  }
+}
 @media screen and (max-width: 768px) {
   main h1 {
-    padding: 20px;
+    padding: 0 20px;
   }
   main p {
-    padding: 20px;
+    padding: 0 20px;
   }
   main .container {
     flex-direction: column !important;
@@ -15,10 +33,12 @@
   main .container .maps {
     margin: 0 !important;
     margin-top: 40px !important;
+    width: 100%;
+    text-align: center;
   }
   main .container .maps iframe {
     width: auto;
-    height: auto;
+    height: 250px;
   }
   main .container label {
     font-size: 1rem !important;

@@ -1,12 +1,13 @@
-@media screen and (max-width: 768px) {
-  footer .prevent-msg {
-    height: auto !important;
-    padding: 10px;
-    text-align: center;
-  }
+@media screen and (min-width: 768px) and (max-width: 992px) {
   footer .footer-element {
-    display: block !important;
+    display: grid !important;
+    grid-template-columns: 2fr 2fr !important;
     height: auto !important;
+    padding: 0 10vw !important;
+    justify-items: normal !important;
+  }
+  footer .footer-element div {
+    margin: 0 !important;
   }
   footer .footer-element .informations {
     margin: 0 !important;
@@ -21,7 +22,34 @@
     width: auto !important;
   }
   footer .footer-element .social-link {
+    transform: none !important;
+    padding-bottom: 20px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .prevent-msg {
+    height: auto !important;
+    padding: 10px;
     text-align: center;
+  }
+  footer .footer-element {
+    display: flex !important;
+    flex-direction: column;
+  }
+  footer .footer-element .informations {
+    margin: 0 !important;
+  }
+  footer .footer-element .about-us {
+    margin: 0 !important;
+  }
+  footer .footer-element .newsletter {
+    margin: 0 !important;
+  }
+  footer .footer-element .newsletter .newsletter-input {
+    width: auto !important;
+  }
+  footer .footer-element .social-link {
+    text-align: unset !important;
     transform: none !important;
     padding-bottom: 20px !important;
   }
@@ -41,16 +69,12 @@ footer .prevent-msg {
   color: var(--color-greyblue);
 }
 footer .footer-element {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 170px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  justify-items: center;
+  align-items: start;
+  padding: 0 20vw;
   background-color: var(--color-blue);
-}
-footer .footer-element div {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 footer .footer-element div h2 {
   margin-bottom: 10px;
@@ -125,7 +149,7 @@ footer .footer-element .newsletter .newsletter-input input[type=submit]:hover {
   color: var(--color-greyblue);
 }
 footer .footer-element .social-link {
-  transform: translateY(-20%);
+  padding: 20px;
 }
 footer .footer-element .social-link a img {
   width: 30px;

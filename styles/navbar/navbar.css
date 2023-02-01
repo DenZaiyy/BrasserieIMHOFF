@@ -16,7 +16,7 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   header nav {
     text-align: center;
     display: block;
@@ -28,9 +28,31 @@ header nav {
     flex-direction: column;
     justify-content: center;
   }
-  header nav li {
+  header nav ul li {
     margin-bottom: 20px;
     margin-right: 0 !important;
+  }
+  header nav ul li a .fa-solid {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    display: block;
+  }
+  header nav a {
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav ul li {
+    margin-bottom: 20px;
+    margin-right: 0 !important;
+  }
+  header nav ul li a .fa-solid {
+    display: none;
   }
 }
 header nav ul {
@@ -61,6 +83,7 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 header nav ul li p {
+  display: none;
   color: var(--color-cyan);
 }
 header .header-img {

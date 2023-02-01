@@ -1,14 +1,16 @@
 footer {
-    @media screen and (max-width: 768px) {
-        .prevent-msg {
-            height: auto !important;
-            padding: 10px;
-            text-align: center;
-        }
-
+    @media screen and (min-width: 768px) and (max-width: 992px) {
         .footer-element {
-            display: block !important;
+            display: grid !important;
+            grid-template-columns: 2fr 2fr !important;
+            // text-align: center;
             height: auto !important;
+            padding: 0 10vw !important;
+            justify-items: normal !important;
+
+            div {
+                margin: 0 !important;
+            }
 
             .informations {
                 margin: 0 !important;
@@ -27,7 +29,41 @@ footer {
             }
 
             .social-link {
-                text-align: center;
+                transform: none !important;
+                padding-bottom: 20px !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .prevent-msg {
+            height: auto !important;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-element {
+            display: flex !important;
+            flex-direction: column;
+
+            .informations {
+                margin: 0 !important;
+            }
+
+            .about-us {
+                margin: 0 !important;
+            }
+
+            .newsletter {
+                margin: 0 !important;
+
+                .newsletter-input {
+                    width: auto !important;
+                }
+            }
+
+            .social-link {
+                text-align: unset !important;
                 transform: none !important;
                 padding-bottom: 20px !important;
             }
@@ -51,16 +87,19 @@ footer {
     }
 
     .footer-element {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 170px;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-items: center;
+        align-items: start;
+        padding: 0 20vw;
+        // height: 170px;
         background-color: var(--color-blue);
 
         div {
-            margin-left: 15px;
-            margin-right: 15px;
 
             h2 {
                 margin-bottom: 10px;
@@ -141,7 +180,7 @@ footer {
         }
 
         .social-link {
-            transform: translateY(-20%);
+            padding: 20px;
             a img {
                 width: 30px;
                 margin-right: 10px;

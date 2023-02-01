@@ -20,7 +20,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        @media screen and (max-width: 768px){
+        @media screen and (min-width: 768px) and (max-width: 992px) {
             text-align: center;
             display: block;
 
@@ -31,10 +31,40 @@ header {
             ul {
                 flex-direction: column;
                 justify-content: center;
+
+                li {
+                    margin-bottom: 20px;
+                    margin-right: 0 !important;
+
+                    a {
+                        .fa-solid {
+                            display: none;
+                        }
+                    }
+                }
             }
-            li {
-                margin-bottom: 20px;
-                margin-right: 0 !important;
+        }
+
+        @media screen and (max-width: 768px){
+            display: block;
+
+            a {
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: center;
+                li {
+                    margin-bottom: 20px;
+                    margin-right: 0 !important;
+
+                    a {
+                        .fa-solid {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
 
@@ -69,6 +99,7 @@ header {
                 }
 
                 p {
+                    display: none;
                     color: var(--color-cyan);
                 }
             }

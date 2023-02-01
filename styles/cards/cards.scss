@@ -1,3 +1,61 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .cards {
+        display: grid !important;
+        grid-template-columns: 2fr 2fr 2fr;
+        justify-items: center;
+        .card {
+            width: 225px !important;
+            margin: 20px !important;
+
+            figure {
+                .desc-content {
+                    img {
+                        padding: 20px !important;
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .middle {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card {
+            figure {
+                .desc-content {
+                    img {
+                        padding: 20px !important;
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .middle {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .cards {
     margin-top: 20px;
     display: flex;
@@ -26,7 +84,7 @@
                 display: flex;
                 position: relative;
                 width: auto;
-                    
+
                 img{
                     display: block;
                     opacity: 1;
@@ -68,7 +126,6 @@
                     }
                 }
             }
-            
 
             figcaption {
                 margin: 0 30px;
@@ -120,8 +177,6 @@
                 }
             }
         }
-
-        
 
         .inline {
             display: flex;

@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  padding: 20px;
+  margin-top: 10px;
   text-decoration: underline;
 }
 
@@ -30,6 +30,26 @@ p {
 
 .content {
   width: 30%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .content {
+    width: auto;
+    margin: 0 100px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
