@@ -122,10 +122,6 @@ main .container input[type=text]::-moz-placeholder, main .container input[type=e
   color: var(--color-blue);
   opacity: 0.8;
 }
-main .container input[type=text]:-ms-input-placeholder, main .container input[type=email]:-ms-input-placeholder, main .container input[type=tel]:-ms-input-placeholder {
-  color: var(--color-blue);
-  opacity: 0.8;
-}
 main .container input[type=text]::placeholder, main .container input[type=email]::placeholder, main .container input[type=tel]::placeholder {
   color: var(--color-blue);
   opacity: 0.8;

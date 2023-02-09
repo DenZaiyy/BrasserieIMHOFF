@@ -1,96 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/default/default.css" />
-    <link rel="stylesheet" href="styles/navbar/navbar.css" />
-    <link rel="stylesheet" href="styles/legalnotice/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Legal notice</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">
-          <figure class="nav-logo">
-            <img src="assets/img/logo.png" alt="website logo" />
-          </figure>
-        </a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-user fa-xl"></i>
-              My account
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-basket-shopping fa-xl"></i>
-              Shopping cart
-            </a>
-            <p class="cart"></p>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="content">
-          <h1>General Condition of Use</h1>
-          <p>
-            The purpose of these general conditions of use (known as the "GCU")
-            are specific to the brewery IMHOFF – La POISSE
-          </p>
-          <h2>Article 1. Legal notices</h2>
-          <p>
-            Publishing the site “https……..” is secured by the company to the
-            capital of 1000 euros registered to RCS of Forbach with the siren
-            number 852482454, who the registered office is located in 10 main
-            street 57430 SARRALBE.
-          </p>
-          <h2>Article 2. Access to the sit</h2>
-          <p>
-            The site is accessible free of charge at any location to any User
-            with Internet access.
-          </p>
-          <p>
-            To access the services, the User must then identify him/herself
-            using his/her login and password which will be communicated to
-            him/her after registration.
-          </p>
-          <h2>Article 3. Intellectual property</h2>
-          <p>
-            The brands, logos, signs as well as all the contents of the site
-            (texts, images, sound...) are protected by the Intellectual Property
-            Code and more particularly by the copyright
-          </p>
-          <h2>Article 4. Intellectual property</h2>
-          <p>
-            The sources of the information on "https://...." are deemed reliable
-            but the site does not guarantee that it is free of defects, errors
-            or omissions.
-          </p>
-          <p>
-            The User is responsible for keeping the password secret. Any
-            disclosure of the password, in whatever form, is prohibited. The
-            User assumes all risks related to the use of his/her login and
-            password. The site declines all responsibility.
-          </p>
-        </div>
-      </div>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/default/default.css" />
+        <link rel="stylesheet" href="styles/navbar/navbar.css" />
+        <link rel="stylesheet" href="styles/legalnotice/style.css" />
+        <link rel="stylesheet" href="styles/footer/footer.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Legal notice</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <figure class="nav-logo">
+                        <img
+                            src="assets/img/logo_removebg.png"
+                            alt="website logo"
+                        />
+                    </figure>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="account.html">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping fa-xl"></i>
+                            Cart
+                        </a>
+                        <p class="cart" id="shopping-cart"></p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="content">
+                    <h1>General Condition of Use</h1>
+                    <p>
+                        The purpose of these general conditions of use (known as
+                        the "GCU") are specific to the brewery IMHOFF – La
+                        POISSE
+                    </p>
+                    <h2>Article 1. Legal notices</h2>
+                    <p>
+                        Publishing the site “https……..” is secured by the
+                        company to the capital of 1000 euros registered to RCS
+                        of Forbach with the siren number 852482454, who the
+                        registered office is located in 10 main street 57430
+                        SARRALBE.
+                    </p>
+                    <h2>Article 2. Access to the sit</h2>
+                    <p>
+                        The site is accessible free of charge at any location to
+                        any User with Internet access.
+                    </p>
+                    <p>
+                        To access the services, the User must then identify
+                        him/herself using his/her login and password which will
+                        be communicated to him/her after registration.
+                    </p>
+                    <h2>Article 3. Intellectual property</h2>
+                    <p>
+                        The brands, logos, signs as well as all the contents of
+                        the site (texts, images, sound...) are protected by the
+                        Intellectual Property Code and more particularly by the
+                        copyright
+                    </p>
+                    <h2>Article 4. Intellectual property</h2>
+                    <p>
+                        The sources of the information on "https://...." are
+                        deemed reliable but the site does not guarantee that it
+                        is free of defects, errors or omissions.
+                    </p>
+                    <p>
+                        The User is responsible for keeping the password secret.
+                        Any disclosure of the password, in whatever form, is
+                        prohibited. The User assumes all risks related to the
+                        use of his/her login and password. The site declines all
+                        responsibility.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="content-foot">
+                <div class="prevent-msg">
+                    <p>
+                        Alcohol abuse is dangerous for your health, consume in
+                        moderation.
+                    </p>
+                    <p>
+                        The sale of alcohol to minors (under 18) and pregnant
+                        women is prohibited
+                    </p>
+                </div>
+                <div class="footer-element">
+                    <div class="informations">
+                        <h2>Informations</h2>
+                        <div class="links-infos">
+                            <a href="legalnotice.html">Legal notice</a>
+                            <a href="termsofsales.html">Terms of sales</a>
+                            <a href="termsofservice.html">Terms of service</a>
+                        </div>
+                    </div>
+                    <div class="about-us">
+                        <h2>About us</h2>
+                        <p><a href="tel:33671973917">06.71.97.39.17</a></p>
+                        <p>10 rue principale</p>
+                        <p>57430 EICH (SARRALBE)</p>
+                        <p>
+                            <a href="mailto:brasserie.imhoff@gmail.com"
+                                >brasserie.imhoff@gmail.com</a
+                            >
+                        </p>
+                    </div>
+                    <div class="newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="newsletter-input">
+                            <input
+                                type="text"
+                                name="newsletter"
+                                id="newsletter"
+                                placeholder="Your email adress"
+                            />
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </div>
+                    <div class="social-link">
+                        <h2>Socials</h2>
+                        <a
+                            href="https://facebook.com/BrasserieImhoff/"
+                            target="_blank"
+                            ><img
+                                src="assets/img/logo/facebook.png"
+                                alt="Logo facebook"
+                        /></a>
+                        <a
+                            href="https://www.instagram.com/brasserie.imhoff_la.poisse/"
+                            target="_blank"
+                            ><img
+                                src="assets/img/logo/instagram.png"
+                                alt="Logo instagram"
+                        /></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        BRASSERIE IMHOFF © 2023 - Created by
+                        <strong>Elan Formation</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

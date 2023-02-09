@@ -1,12 +1,25 @@
-.container {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    margin: auto !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin: auto !important;
+  }
+}
+main {
+  margin: 0 10vw;
+}
+main .container {
   display: flex;
   flex-direction: column;
 }
-.container .products-beer {
+main .container .products-beer {
   margin-top: 2rem;
   text-align: center;
 }
-.container .accessorie-products {
+main .container .accessorie-products {
   margin-top: 2rem;
   text-align: center;
 }/*# sourceMappingURL=styles.css.map */

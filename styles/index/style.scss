@@ -76,8 +76,6 @@
             }
         }
     }
-
-    
 }
 
 main {
@@ -88,7 +86,7 @@ main {
     }
     .about-us{
         margin-top: 50px;
-        margin-left: 100px;
+        padding: 0 10vw;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -119,10 +117,11 @@ main {
 
     .best-seller{
         margin-top: 40px;
-        margin-right: 100px;
+        padding: 20px 10vw;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        background: var(--color-greyblue);
 
         figure{
             img{
