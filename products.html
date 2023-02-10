@@ -1,602 +1,728 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/default/default.css" />
-    <link rel="stylesheet" href="styles/navbar/navbar.css" />
-    <link rel="stylesheet" href="styles/cards/cards.css" />
-    <link rel="stylesheet" href="styles/footer/footer.css" />
-    <link rel="stylesheet" href="styles/products/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Products - BRASSERIE IMHOFF</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">
-          <figure class="nav-logo">
-            <img src="assets/img/logo.png" alt="website logo" />
-          </figure>
-        </a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html" class="active">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="account.html">
-              <i class="fa-solid fa-user fa-xl"></i>
-              My account
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-basket-shopping fa-xl"></i>
-              Shopping cart
-            </a>
-            <p class="cart"></p>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="products-beer">
-          <h2>Our beer's</h2>
-          <p>List of all beer</p>
-          <div class="cards">
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-blanche.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Summer White Beer:</h2>
-                      <p class="text">
-                        Greedy by a caramelised malt and refreshing by the
-                        acidity of the red fruit notes. Don’t wait the good days
-                        for drink a good refresh white beer, let’s try our White
-                        POISSE A tasty caramelised but refreshing beer due to
-                        the acidity of the red fruit notes. Don’t wait until the
-                        sunny days are here to drink a good refreshing white
-                        beer. Let’s try now our White POISSE
-                      </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/default/default.css" />
+        <link rel="stylesheet" href="styles/navbar/navbar.css" />
+        <link rel="stylesheet" href="styles/cards/cards.css" />
+        <link rel="stylesheet" href="styles/footer/footer.css" />
+        <link rel="stylesheet" href="styles/products/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Products - BRASSERIE IMHOFF</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <figure class="nav-logo">
+                        <img
+                            src="assets/img/logo_removebg.png"
+                            alt="website logo"
+                        />
+                    </figure>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="account.html">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping fa-xl"></i>
+                            Cart
+                        </a>
+                        <p class="cart" id="shopping-cart"></p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="products-beer">
+                    <h2>Our beer's</h2>
+                    <p>List of all beer</p>
+                    <div id="beer-items" class="cards">
+                        <!-- <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-blanche.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Summer White Beer:</h2>
+                                            <p class="text">
+                                                Greedy by a caramelised malt and
+                                                refreshing by the acidity of the
+                                                red fruit notes. Don’t wait the
+                                                good days for drink a good
+                                                refresh white beer, let’s try
+                                                our White POISSE A tasty
+                                                caramelised but refreshing beer
+                                                due to the acidity of the red
+                                                fruit notes. Don’t wait until
+                                                the sunny days are here to drink
+                                                a good refreshing white beer.
+                                                Let’s try now our White POISSE
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - White Beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice1()"
+                                                class="item-select"
+                                                id="beer-min-1"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice1()"
+                                                id="beer-max-1"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-1">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-blonde.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Lager Beer :</h2>
+                                            <p class="text">
+                                                With citrus notes that tickle
+                                                your noses, bitterness will
+                                                surprise your taste buds and
+                                                while some light bubbles will be
+                                                caressing your palate. Our
+                                                Blonde POISSE would be refresh
+                                                for your best gustatory will
+                                                refresh you and offer gustatory
+                                                pleasure.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Lager Beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice2()"
+                                                class="item-select"
+                                                id="beer-min-2"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice2()"
+                                                id="beer-max-2"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-2">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-brune.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Brown beer :</h2>
+                                            <p class="text">
+                                                It’s roasted malt brings slight
+                                                bitterness and some floral
+                                                notes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Brown Beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice3()"
+                                                class="item-select"
+                                                id="beer-min-3"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice3()"
+                                                id="beer-max-3"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-3">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-automne.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Autumn beer :</h2>
+                                            <p class="text">
+                                                Ginger beer, a beer with
+                                                temperament, ideal for
+                                                conviviality of the first autumn
+                                                garden days. The dream beer to
+                                                warm up by the fire.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Autumn Beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice4()"
+                                                class="item-select"
+                                                id="beer-min-4"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice4()"
+                                                id="beer-max-4"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-4">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-ete.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Summer white Beer :</h2>
+                                            <p class="text">
+                                                A tasty caramelised but
+                                                refreshing beer due to the
+                                                acidity of the red fruit notes.
+                                                Don’t wait until the sunny days
+                                                are here to drink a good
+                                                refreshing white beer. Let’s try
+                                                now our White POISSE
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Summer White Beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice5()"
+                                                class="item-select"
+                                                id="beer-min-5"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice5()"
+                                                id="beer-max-5"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-5">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-ipa.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>IPA BEER (indian pale ale)</h2>
+                                            <p class="text">
+                                                Strongest beer by HOP, brewed
+                                                with specific citrus hop, A
+                                                beautiful bitterness in start of
+                                                tasting followed by a delicious
+                                                floral taste. And a bumpy happy
+                                                ending.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - I.P.A beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice6()"
+                                                class="item-select"
+                                                id="beer-min-6"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice6()"
+                                                id="beer-max-6"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-6">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-noel.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Merry Christmas BEER :</h2>
+                                            <p class="text">
+                                                One beautiful amber robe, with a
+                                                gentle approach, a subtill mix
+                                                of Christmas spices and a light
+                                                bitterness note in mouth.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Christmas beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice7()"
+                                                class="item-select"
+                                                id="beer-min-7"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice7()"
+                                                id="beer-max-7"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-7">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/biere-printemps.png"
+                                            alt="image of product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Spring break beer :</h2>
+                                            <p class="text">
+                                                Blondie floral beer with a
+                                                golden colour. Light in mouth,
+                                                hydrating beer and ideal on the
+                                                first sunny days of the year.
+                                                the first good days of the
+                                                years.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Spring beer
+                                            </strong>
+                                        </a>
+                                        <p>
+                                            <button
+                                                onclick="getMinPrice8()"
+                                                class="item-select"
+                                                id="beer-min-8"
+                                            >
+                                                33cl
+                                            </button>
+                                            -
+                                            <button
+                                                onclick="getMaxPrice8()"
+                                                id="beer-max-8"
+                                            >
+                                                75cl
+                                            </button>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-8">2,50 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div> -->
                     </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - White Beer </strong>
-                    </a>
+                </div>
+                <div class="accessorie-products">
+                    <h2>Our accessories</h2>
+                    <p>List of our all accessories</p>
+                    <div id="accessorie-items" class="cards">
+                        <!-- <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/product-9.png"
+                                            alt="coaster product"
+                                        />
+                                        <div class="middle">
+                                            <h2>Coasters :</h2>
+                                            <p class="text">
+                                                With the LA POISSE logo in the
+                                                middle, practical for placing
+                                                your glasses, while keeping a
+                                                nice design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong>
+                                                La Poisse - Dessous de verre
+                                            </strong>
+                                        </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline">
+                                <div class="price" id="price-1">5 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <figure>
+                                    <div class="desc-content">
+                                        <img
+                                            src="assets/img/product-10.png"
+                                            alt="beer glass"
+                                        />
+                                        <div class="middle">
+                                            <h2>Glasses By LA POISSE :</h2>
+                                            <p class="text">
+                                                Designed by LA POISSE for LA
+                                                POISSE, theses glasses are the
+                                                dream for beer come in 33cl or
+                                                75cl of beer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption>
+                                        <a href="" target="_blank">
+                                            <strong> La Poisse - Verre </strong>
+                                        </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="like-product">
+                                <i class="fa-regular fa-heart fa-xl"></i>
+                            </div>
+                            <div class="inline glass-product">
+                                <div class="price" id="price-1">10 €</div>
+                                <div class="statu-stock in-stock">In stock</div>
+                            </div>
+                            <div class="btn">
+                                <button
+                                    class="btn-add"
+                                    type="button"
+                                    onclick="addToCart()"
+                                >
+                                    Add product
+                                </button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="prevent-msg">
+                <p>
+                    Alcohol abuse is dangerous for your health, consume in
+                    moderation.
+                </p>
+                <p>
+                    The sale of alcohol to minors (under 18) and pregnant women
+                    is prohibited
+                </p>
+            </div>
+            <div class="footer-element">
+                <div class="informations">
+                    <h2>Informations</h2>
+                    <div class="links-infos">
+                        <a href="legalnotice.html">Legal notice</a>
+                        <a href="termsofsales.html">Terms of sales</a>
+                        <a href="termsofservice.html">Terms of service</a>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h2>About us</h2>
+                    <p><a href="tel:33671973917">06.71.97.39.17</a></p>
+                    <p>10 rue principale</p>
+                    <p>57430 EICH (SARRALBE)</p>
                     <p>
-                      <button
-                        onclick="getMinPrice1()"
-                        class="item-select"
-                        id="beer-min-1"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice1()" id="beer-max-1">
-                        75cl
-                      </button>
+                        <a href="mailto:brasserie.imhoff@gmail.com"
+                            >brasserie.imhoff@gmail.com</a
+                        >
                     </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-1">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-blonde.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Lager Beer :</h2>
-                      <p class="text">
-                        With citrus notes that tickle your noses, bitterness
-                        will surprise your taste buds and while some light
-                        bubbles will be caressing your palate. Our Blonde POISSE
-                        would be refresh for your best gustatory will refresh
-                        you and offer gustatory pleasure.
-                      </p>
+                </div>
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <div class="newsletter-input">
+                        <input
+                            type="text"
+                            name="newsletter"
+                            id="newsletter"
+                            placeholder="Your email adress"
+                        />
+                        <input type="submit" value="Submit" />
                     </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Lager Beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice2()"
-                        class="item-select"
-                        id="beer-min-2"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice2()" id="beer-max-2">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-2">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
+                </div>
+                <div class="social-link">
+                    <h2>Socials</h2>
+                    <a
+                        href="https://facebook.com/BrasserieImhoff/"
+                        target="_blank"
+                        ><img
+                            src="assets/img/logo/facebook.png"
+                            alt="Logo facebook"
+                    /></a>
+                    <a
+                        href="https://www.instagram.com/brasserie.imhoff_la.poisse/"
+                        target="_blank"
+                        ><img
+                            src="assets/img/logo/instagram.png"
+                            alt="Logo instagram"
+                    /></a>
+                </div>
             </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-brune.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Brown beer :</h2>
-                      <p class="text">
-                        It’s roasted malt brings slight bitterness and some
-                        floral notes.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Brown Beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice3()"
-                        class="item-select"
-                        id="beer-min-3"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice3()" id="beer-max-3">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-3">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
+            <div class="copyright">
+                <p>
+                    BRASSERIE IMHOFF © 2023 - Created by
+                    <strong>Elan Formation</strong>
+                </p>
             </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-automne.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Autumn beer :</h2>
-                      <p class="text">
-                        Ginger beer, a beer with temperament, ideal for
-                        conviviality of the first autumn garden days. The dream
-                        beer to warm up by the fire.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Autumn Beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice4()"
-                        class="item-select"
-                        id="beer-min-4"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice4()" id="beer-max-4">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-4">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-ete.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Summer white Beer :</h2>
-                      <p class="text">
-                        A tasty caramelised but refreshing beer due to the
-                        acidity of the red fruit notes. Don’t wait until the
-                        sunny days are here to drink a good refreshing white
-                        beer. Let’s try now our White POISSE
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Summer White Beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice5()"
-                        class="item-select"
-                        id="beer-min-5"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice5()" id="beer-max-5">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-5">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-ipa.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>IPA BEER (indian pale ale)</h2>
-                      <p class="text">
-                        Strongest beer by HOP, brewed with specific citrus hop,
-                        A beautiful bitterness in start of tasting followed by a
-                        delicious floral taste. And a bumpy happy ending.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - I.P.A beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice6()"
-                        class="item-select"
-                        id="beer-min-6"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice6()" id="beer-max-6">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-6">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-noel.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Merry Christmas BEER :</h2>
-                      <p class="text">
-                        One beautiful amber robe, with a gentle approach, a
-                        subtill mix of Christmas spices and a light bitterness
-                        note in mouth.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Christmas beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice7()"
-                        class="item-select"
-                        id="beer-min-7"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice7()" id="beer-max-7">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-7">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img
-                      src="assets/img/biere-printemps.png"
-                      alt="image of product"
-                    />
-                    <div class="middle">
-                      <h2>Spring break beer :</h2>
-                      <p class="text">
-                        Blondie floral beer with a golden colour. Light in
-                        mouth, hydrating beer and ideal on the first sunny days
-                        of the year. the first good days of the years.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Spring beer </strong>
-                    </a>
-                    <p>
-                      <button
-                        onclick="getMinPrice8()"
-                        class="item-select"
-                        id="beer-min-8"
-                      >
-                        33cl
-                      </button>
-                      -
-                      <button onclick="getMaxPrice8()" id="beer-max-8">
-                        75cl
-                      </button>
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-8">2,50 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accessorie-products">
-          <h2>Our accessories</h2>
-          <p>List of our all accessories</p>
-          <div class="cards">
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img src="assets/img/product-9.png" alt="coaster product" />
-                    <div class="middle">
-                      <h2>Coasters :</h2>
-                      <p class="text">
-                        With the LA POISSE logo in the middle, practical for
-                        placing your glasses, while keeping a nice design.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Dessous de verre </strong>
-                    </a>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline">
-                <div class="price" id="price-1">5 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div>
-                <figure>
-                  <div class="desc-content">
-                    <img src="assets/img/product-10.png" alt="beer glass" />
-                    <div class="middle">
-                      <h2>Glasses By LA POISSE :</h2>
-                      <p class="text">
-                        Designed by LA POISSE for LA POISSE, theses glasses are
-                        the dream for beer come in 33cl or 75cl of beer.
-                      </p>
-                    </div>
-                  </div>
-                  <figcaption>
-                    <a href="" target="_blank">
-                      <strong> La Poisse - Verre </strong>
-                    </a>
-                  </figcaption>
-                </figure>
-              </div>
-              <div class="like-product">
-                <i class="fa-regular fa-heart fa-xl"></i>
-              </div>
-              <div class="inline glass-product">
-                <div class="price" id="price-1">10 €</div>
-                <div class="statu-stock in-stock">In stock</div>
-              </div>
-              <div class="btn">
-                <button class="btn-add" type="button" onclick="addToCart()">
-                  Add product
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="prevent-msg">
-        <p>
-          Alcohol abuse is dangerous for your health, consume in moderation.
-        </p>
-        <p>
-          The sale of alcohol to minors (under 18) and pregnant women is
-          prohibited
-        </p>
-      </div>
-      <div class="footer-element">
-        <div class="informations">
-          <h2>Informations</h2>
-          <div class="links-infos">
-            <a href="legalnotice.html">Legal notice</a>
-            <a href="termsofsales.html">Terms of sales</a>
-            <a href="termsofservice.html">Terms of service</a>
-          </div>
-        </div>
-        <div class="about-us">
-          <h2>About us</h2>
-          <p><a href="tel:33671973917">06.71.97.39.17</a></p>
-          <p>10 rue principale</p>
-          <p>57430 EICH (SARRALBE)</p>
-          <p>
-            <a href="mailto:brasserie.imhoff@gmail.com"
-              >brasserie.imhoff@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="newsletter">
-          <h2>Newsletter</h2>
-          <div class="newsletter-input">
-            <input
-              type="text"
-              name="newsletter"
-              id="newsletter"
-              placeholder="Your email adress"
-            />
-            <input type="submit" value="Submit" />
-          </div>
-        </div>
-        <div class="social-link">
-          <h2>Socials</h2>
-          <a href="https://facebook.com/BrasserieImhoff/" target="_blank"
-            ><img src="assets/img/logo/facebook.png" alt="Logo facebook"
-          /></a>
-          <a
-            href="https://www.instagram.com/brasserie.imhoff_la.poisse/"
-            target="_blank"
-            ><img src="assets/img/logo/instagram.png" alt="Logo instagram"
-          /></a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          BRASSERIE IMHOFF © 2023 - Created by <strong>Elan Formation</strong>
-        </p>
-      </div>
-    </footer>
-    <script src="script/index.js"></script>
-    <script src="script/products.js"></script>
-  </body>
+        </footer>
+        <script src="script/products.js"></script>
+        <script src="script/accesories.js"></script>
+        <script src="script/shoppingCart.js"></script>
+    </body>
 </html>

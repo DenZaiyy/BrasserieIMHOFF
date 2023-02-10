@@ -87,16 +87,11 @@ footer {
     }
 
     .footer-element {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: center;
-        // align-items: center;
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr;
         justify-items: center;
         align-items: start;
         padding: 0 20vw;
-        // height: 170px;
         background-color: var(--color-blue);
 
         div {
@@ -110,7 +105,7 @@ footer {
                 text-decoration: none;
                 color: var(--color-greyblue);
             }
-            
+
             p{
                 margin-top: 5px;
                 color: var(--color-greyblue);

@@ -1,66 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/default/default.css" />
-    <link rel="stylesheet" href="styles/navbar/navbar.css" />
-    <link rel="stylesheet" href="styles/termsofservice/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Terms of service</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">
-          <figure class="nav-logo">
-            <img src="assets/img/logo.png" alt="website logo" />
-          </figure>
-        </a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-user fa-xl"></i>
-              My account
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-basket-shopping fa-xl"></i>
-              Shopping cart
-            </a>
-            <p class="cart"></p>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="content">
-        <h1>General Data Protection Regulation</h1>
-        <h2>Cookies</h2>
-        <p>
-          The User is informed that during his visits to the site, a cookie
-          maybe automatically installed on his browser.
-        </p>
-        <h2>Data collection</h2>
-        <p>
-          The site is exempt from declaration to the National Commission of
-          Informatique et Liberty (CNIL) as it does not collect any data
-          concerning Users.
-        </p>
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/default/default.css" />
+        <link rel="stylesheet" href="styles/navbar/navbar.css" />
+        <link rel="stylesheet" href="styles/footer/footer.css" />
+        <link rel="stylesheet" href="styles/termsofservice/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Terms of service</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <figure class="nav-logo">
+                        <img
+                            src="assets/img/logo_removebg.png"
+                            alt="website logo"
+                        />
+                    </figure>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="account.html">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping fa-xl"></i>
+                            Cart
+                        </a>
+                        <p class="cart" id="shopping-cart"></p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="content">
+                    <h1>General Data Protection Regulation</h1>
+                    <h2>Cookies</h2>
+                    <p>
+                        The User is informed that during his visits to the site,
+                        a cookie maybe automatically installed on his browser.
+                    </p>
+                    <h2>Data collection</h2>
+                    <p>
+                        The site is exempt from declaration to the National
+                        Commission of Informatique et Liberty (CNIL) as it does
+                        not collect any data concerning Users.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="content-foot">
+                <div class="prevent-msg">
+                    <p>
+                        Alcohol abuse is dangerous for your health, consume in
+                        moderation.
+                    </p>
+                    <p>
+                        The sale of alcohol to minors (under 18) and pregnant
+                        women is prohibited
+                    </p>
+                </div>
+                <div class="footer-element">
+                    <div class="informations">
+                        <h2>Informations</h2>
+                        <div class="links-infos">
+                            <a href="legalnotice.html">Legal notice</a>
+                            <a href="termsofsales.html">Terms of sales</a>
+                            <a href="termsofservice.html">Terms of service</a>
+                        </div>
+                    </div>
+                    <div class="about-us">
+                        <h2>About us</h2>
+                        <p><a href="tel:33671973917">06.71.97.39.17</a></p>
+                        <p>10 rue principale</p>
+                        <p>57430 EICH (SARRALBE)</p>
+                        <p>
+                            <a href="mailto:brasserie.imhoff@gmail.com"
+                                >brasserie.imhoff@gmail.com</a
+                            >
+                        </p>
+                    </div>
+                    <div class="newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="newsletter-input">
+                            <input
+                                type="text"
+                                name="newsletter"
+                                id="newsletter"
+                                placeholder="Your email adress"
+                            />
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </div>
+                    <div class="social-link">
+                        <h2>Socials</h2>
+                        <a
+                            href="https://facebook.com/BrasserieImhoff/"
+                            target="_blank"
+                            ><img
+                                src="assets/img/logo/facebook.png"
+                                alt="Logo facebook"
+                        /></a>
+                        <a
+                            href="https://www.instagram.com/brasserie.imhoff_la.poisse/"
+                            target="_blank"
+                            ><img
+                                src="assets/img/logo/instagram.png"
+                                alt="Logo instagram"
+                        /></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        BRASSERIE IMHOFF © 2023 - Created by
+                        <strong>Elan Formation</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

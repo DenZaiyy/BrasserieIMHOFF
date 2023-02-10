@@ -1,12 +1,18 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    
+    main{
+        margin: auto !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    
+    main{
+        margin: auto !important;
+    }
 }
 
-.container {
+main {
+    margin: 0 10vw;
+    .container {
     display: flex;
     flex-direction: column;
 
@@ -20,3 +26,5 @@
         text-align: center;
     }
 }
+}
+
