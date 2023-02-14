@@ -66,7 +66,8 @@ footer .prevent-msg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--color-greyblue);
+  color: white;
+  text-transform: uppercase;
 }
 footer .footer-element {
   display: grid;

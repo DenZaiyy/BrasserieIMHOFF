@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="styles/default/default.css" />
         <link rel="stylesheet" href="styles/navbar/navbar.css" />
         <link rel="stylesheet" href="styles/cards/cards.css" />
@@ -37,16 +36,12 @@
                 </ul>
                 <ul>
                     <li>
-                        <a href="account.html">
-                            <i class="fa-solid fa-user fa-xl"></i>
-                            Account
-                        </a>
+                        <i class="fa-solid fa-user fa-xl"></i>
+                        <a href="account.html"> Account </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-basket-shopping fa-xl"></i>
-                            Cart
-                        </a>
+                        <i class="fa-solid fa-basket-shopping fa-xl"></i>
+                        <a href="#"> Cart </a>
                         <p class="cart" id="shopping-cart"></p>
                     </li>
                 </ul>
@@ -57,8 +52,8 @@
                 <div class="products-beer">
                     <h2>Our beer's</h2>
                     <p>List of all beer</p>
-                    <div id="beer-items" class="cards">
-                        <!-- <div class="card">
+                    <div class="cards">
+                        <div class="card">
                             <div>
                                 <figure>
                                     <div class="desc-content">
@@ -92,17 +87,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice1()"
-                                                class="item-select"
-                                                id="beer-min-1"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice1()"
-                                                id="beer-max-1"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -113,15 +103,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-1">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -157,17 +143,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice2()"
-                                                class="item-select"
-                                                id="beer-min-2"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice2()"
-                                                id="beer-max-2"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -178,15 +159,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-2">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -216,17 +193,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice3()"
-                                                class="item-select"
-                                                id="beer-min-3"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice3()"
-                                                id="beer-max-3"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -237,15 +209,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-3">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -277,17 +245,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice4()"
-                                                class="item-select"
-                                                id="beer-min-4"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice4()"
-                                                id="beer-max-4"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -298,15 +261,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-4">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -340,17 +299,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice5()"
-                                                class="item-select"
-                                                id="beer-min-5"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice5()"
-                                                id="beer-max-5"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -361,15 +315,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-5">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -402,17 +352,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice6()"
-                                                class="item-select"
-                                                id="beer-min-6"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice6()"
-                                                id="beer-max-6"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -423,15 +368,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-6">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -462,17 +403,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice7()"
-                                                class="item-select"
-                                                id="beer-min-7"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice7()"
-                                                id="beer-max-7"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -483,15 +419,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-7">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -524,17 +456,12 @@
                                         </a>
                                         <p>
                                             <button
-                                                onclick="getMinPrice8()"
-                                                class="item-select"
-                                                id="beer-min-8"
+                                                class="beer-min item-select"
                                             >
                                                 33cl
                                             </button>
                                             -
-                                            <button
-                                                onclick="getMaxPrice8()"
-                                                id="beer-max-8"
-                                            >
+                                            <button class="beer-max">
                                                 75cl
                                             </button>
                                         </p>
@@ -545,26 +472,22 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-8">2,50 €</div>
+                                <div class="price">2,50 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <div class="accessorie-products">
                     <h2>Our accessories</h2>
                     <p>List of our all accessories</p>
-                    <div id="accessorie-items" class="cards">
-                        <!-- <div class="card">
+                    <div class="cards">
+                        <div class="card">
                             <div>
                                 <figure>
                                     <div class="desc-content">
@@ -595,15 +518,11 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline">
-                                <div class="price" id="price-1">5 €</div>
+                                <div class="price">5 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
@@ -637,19 +556,15 @@
                                 <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                             <div class="inline glass-product">
-                                <div class="price" id="price-1">10 €</div>
+                                <div class="price">10 €</div>
                                 <div class="statu-stock in-stock">In stock</div>
                             </div>
                             <div class="btn">
-                                <button
-                                    class="btn-add"
-                                    type="button"
-                                    onclick="addToCart()"
-                                >
+                                <button class="btn-add" type="button">
                                     Add product
                                 </button>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -722,8 +637,7 @@
                 </p>
             </div>
         </footer>
-        <script src="script/products.js"></script>
-        <script src="script/accesories.js"></script>
+        <script src="script/cards.js"></script>
         <script src="script/shoppingCart.js"></script>
     </body>
 </html>

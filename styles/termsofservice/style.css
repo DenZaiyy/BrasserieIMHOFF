@@ -7,32 +7,33 @@ body {
 }
 
 .content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: underline;
+    text-align: center;
     margin-top: 5%;
+    margin-bottom: 20px;
 }
 
 .content h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     text-decoration: underline;
 }
 
 .content p {
     margin-top: 20px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 5%;
+    justify-content: center;
 }
 
 .content {
-    width: 30%;
+    width: 50%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {

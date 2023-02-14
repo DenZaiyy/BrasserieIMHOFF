@@ -83,7 +83,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: var(--color-greyblue);
+        color: white;
+        // font-weight: bold;
+        text-transform: uppercase;
     }
 
     .footer-element {
