@@ -77,8 +77,14 @@ header nav ul li .active::before {
   background-color: var(--color-greyblue);
 }
 header nav ul li i {
+  cursor: pointer;
   color: var(--color-cyan);
   margin-right: 5px;
+  transition: all 0.2s linear;
+}
+header nav ul li i:hover {
+  color: var(--color-greyblue);
+  transition: all 0.2s linear;
 }
 header nav ul li a {
   position: relative;

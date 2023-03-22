@@ -87,8 +87,14 @@ header {
                 }
 
                 i {
+                    cursor: pointer;
                     color: var(--color-cyan);
                     margin-right: 5px;
+                    transition: all .2s linear;
+                    &:hover {
+                        color: var(--color-greyblue);
+                        transition: all .2s linear;
+                    }
                 }
 
                 a {
